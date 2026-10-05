@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+.counter-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(62, 240, 240, 0.12),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(21, 22, 53, 0.06),
+      transparent 35%
+    ),
+    #ffffff;
+}
+
+.counter-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 48px 40px;
+  text-align: center;
+
+  background: #ffffff;
+  border: 1px solid rgba(21, 22, 53, 0.08);
+  border-radius: 24px;
+
+  box-shadow:
+    0 20px 50px rgba(21, 22, 53, 0.1),
+    0 0 30px rgba(62, 240, 240, 0.08);
+}
+
+.counter-card h1 {
+  margin: 0;
+
+  color: #151635;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.description {
+  margin: 12px 0 32px;
+
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.count-display {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #151635;
+
+  box-shadow:
+    0 15px 35px rgba(21, 22, 53, 0.2),
+    0 0 40px rgba(62, 240, 240, 0.15);
+}
+
+.count-display span {
+  color: #3ef0f0;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.counter-button {
+  height: 52px;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.counter-button:hover {
+  transform: translateY(-2px);
+}
+
+.counter-button:active {
+  transform: translateY(0);
+}
+
+.decrease,
+.increase {
+  width: 52px;
+
+  color: #151635;
+  background: #3ef0f0;
+}
+
+.decrease:hover,
+.increase:hover {
+  box-shadow: 0 8px 25px rgba(62, 240, 240, 0.35);
+}
+
+.reset {
+  padding: 0 24px;
+
+  color: #151635;
+  background: #f1f2f6;
+  border: 1px solid rgba(21, 22, 53, 0.08);
+}
+
+.reset:hover {
+  background: #e8e9ef;
+  box-shadow: 0
+
+}
